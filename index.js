@@ -18,20 +18,8 @@ console.log(typeof JSON.stringify(data));
 function render(){
 	document.write(content);
 }*/
-var name = [
-	{
-		'id': '1',
-		'name':'AAAA'
-	},
-	{
-		'id': '2',
-		'name':'BBBB'
-	},
-	{
-		'id': '3',
-		'name':'CCCC'
-	},
-]
+var name=["aaaa","bbbb","cccc"];
 
-var x = {...name};
-console.log(x);
+var x = name.split('');
+console.log(name);
+//console.log(x);
