@@ -3,7 +3,7 @@
 // Có thể tìm link tới thư viện axios tại: https://cdnjs.com/
 // Để thêm thư viện vào jsfiddle, nhấn vào Resources ở cột trái, nhập link vào rồi ấn (+)
 // 2. Làm tương tự, thay vì dùng axios, hãy dùng fetch (google để biết cách dùng)
-const url="https://randomuser.me/api/"
+/*const url="https://randomuser.me/api/"
 var content ;
 var data = axios.get(url).then(reponse=>reponse.data)
 .catch(error =>console.log(error));
@@ -17,4 +17,21 @@ data.then((data)=>{
 console.log(typeof JSON.stringify(data));
 function render(){
 	document.write(content);
-}
+}*/
+var name = [
+	{
+		'id': '1',
+		'name':'AAAA'
+	},
+	{
+		'id': '2',
+		'name':'BBBB'
+	},
+	{
+		'id': '3',
+		'name':'CCCC'
+	},
+]
+
+var x = {...name};
+console.log(x);
