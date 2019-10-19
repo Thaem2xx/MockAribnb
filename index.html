@@ -2,11 +2,61 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Foo App</title>
+	<title>Airbnb</title>
+	<link rel="stylesheet" href="./style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
-	<h2>Foo App</h2>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script type="text/javascript" src="index.js"></script>
+	<div class="header">
+		<div class="nav-menu">
+			<div class="airbnb-icon">
+				<img class="icon"src="asset/airbnb.png"></img>
+			</div>
+			<div class="menu-right">
+				<ul>
+					<li><a href="https://www.airbnb.com/host/homes">Host a home</a></li>
+					<li><a href="https://www.airbnb.com/host/experiences?from_nav=1">Host a experience</a></li>
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Sign up</a></li>
+					<li><a href="#">Sign in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header-content">
+			<div class="search-panel">
+				<div class="search-panel__inner">
+					<h1>Book unique places to stay and things to do.</h1>
+					<form class="search-form">
+						<div class="row">
+							<div class="col">Where</div>
+						</div>
+						<div class="row">
+							<div class="col"><input type="text" class="input-group"></div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="row">CHECK-IN</div>
+								<div class="row"><input type="text" id="datepicker" name="date1"></div>
+							</div>
+							<div class="col">
+								<div class="row">CHECK-OUT</div>
+								<div class="row"><input type="text" id="datepicker2" name="date2"></div>
+							</div>
+						</div>
+					</form>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+        $("#datepicker, #datepicker2").datepicker({
+            uiLibrary: 'bootstrap4'
+        });
+    </script>
 </body>
 </html>
